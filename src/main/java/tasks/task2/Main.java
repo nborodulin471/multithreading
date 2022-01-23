@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         Collection<Callable<Integer>> callables = List.of(
-                new MyCallable("1"),
-                new MyCallable("2"),
-                new MyCallable("3"),
-                new MyCallable("4")
+                new MyCallable(),
+                new MyCallable(),
+                new MyCallable(),
+                new MyCallable()
 
         );
         final ExecutorService threadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
